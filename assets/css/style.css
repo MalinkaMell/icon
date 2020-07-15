@@ -1,0 +1,331 @@
+:root {
+  --tp-navy: #1C2933;
+  --tp-red: #D9381F;
+  --tp-blue-lake: #384F5C;
+  --tp-pale-sky: #D4E3E8;
+  --tp-dark-forest: #363636;
+  --tp-pine-green: #617052;
+  --tp-stone: #B0ABA6;
+  --tp-sand: #F0EDEB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.color-sand {
+  color: var(--tp-sand);
+}
+
+.color-navy {
+  color: var(--tp-navy);
+}
+
+.color-pine-green {
+  color: var(--tp-pine-green);
+}
+
+.bg-navy {
+  background-color: var(--tp-navy);
+}
+
+body {
+  font-family: 'PT Serif', serif;
+}
+
+body,
+#header {
+  background-color: var(--tp-sand);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.parallax-wraper{
+  background-color: var(--tp-pine-green);
+}
+
+.parallax {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2258%22%20height%3D%22299%22%20viewBox%3D%220%200%2058%20299%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M2.28868e-06%2051.4087L54.0729%20-2.32071e-06L58%204.4574L4.22917%2055.5689L2.28868e-06%2051.4087Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3Cpath%20d%3D%22M2.28868e-06%2081.7192L54.0729%2030.3105L58%2034.7679L4.22917%2085.8795L2.28868e-06%2081.7192Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3Cpath%20d%3D%22M2.28868e-06%20112.327L54.0729%2060.918L58%2065.0782L4.22917%20116.487L2.28868e-06%20112.327Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3Cpath%20d%3D%22M2.28868e-06%20142.637L54.0729%2091.2285L58%2095.6859L4.22917%20146.798L2.28868e-06%20142.637Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3Cpath%20d%3D%22M2.27545e-06%20172.948L54.0729%20121.836L58%20125.996L4.22917%20177.108L2.27545e-06%20172.948Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3Cpath%20d%3D%22M2.28868e-06%20203.555L54.0729%20152.146L58%20156.604L4.22917%20207.715L2.28868e-06%20203.555Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3Cpath%20d%3D%22M2.28868e-06%20233.865L54.0729%20182.456L58%20186.913L4.22917%20238.025L2.28868e-06%20233.865Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3Cpath%20d%3D%22M2.27545e-06%20264.176L54.0729%20213.064L58%20217.225L4.22917%20268.633L2.27545e-06%20264.176Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3Cpath%20d%3D%22M2.28868e-06%20294.783L54.0729%20243.374L58%20247.831L4.22917%20298.943L2.28868e-06%20294.783Z%22%20fill%3D%22%231C2933%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  padding-top: 60px;
+  background-attachment: fixed;
+  background-position: bottom left -50px;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  min-height: 500px;
+  margin-top: -23px;
+}
+
+.parallax img{
+  margin-left: -50px;
+}
+
+.headline {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.subhead {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.btn-custom {
+  height: 46px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 6px 30px !important;
+  border-radius: 30px;
+}
+
+.btn-custom-color {
+  background: var(--tp-red);
+  color: var(--tp-sand);
+  transition: all .5s ease-in;
+}
+
+.btn-custom-color:hover {
+  background: var(--tp-sand);
+  color: var(--tp-red);
+}
+
+.btn-custom-color:focus {
+  border: 3px solid var(--tp-red);
+  background: transparent;
+  color: var(--tp-red);
+  box-shadow: none;
+}
+
+.btn-custom-color-inverse {
+  background: var(--tp-sand);
+  color: var(--tp-red);
+  transition: all .5s ease-in;
+}
+
+.btn-custom-color-inverse:hover {
+  background: var(--tp-red);
+  color: var(--tp-sand);
+}
+
+.btn-custom-color-inverse:focus {
+  border: 3px solid var(--tp-sand);
+  background: transparent;
+  color: var(--tp-sand);
+  box-shadow: none;
+}
+
+.height-200 {
+  height: 200px !important;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-svg {
+  height: 33px;
+  width: auto;
+}
+
+.blue-box {
+  background-color: var(--tp-navy);
+  color: var(--tp-pale-sky);
+  padding: 30px 50px;
+  position: absolute;
+  bottom: -162px;
+  right: 0;
+}
+
+.text-box {
+  padding-top: 250px;
+  text-align: left;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+figure {
+  overflow: hidden;
+}
+
+figure img {
+  transition: all .5s ease;
+  opacity: .8;
+}
+
+figure img:hover {
+  transform: scale(1.1, 1.1);
+  opacity: 1;
+}
+
+footer {
+  background-color: var(--tp-navy);
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 46px;
+}
+
+footer .copy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+#scroll-to-top {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  width: 85px;
+  height: 65px;
+  line-height: 80px;
+  background-color: var(--tp-navy);
+  text-align: center;
+}
+
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* MEDIA QUERIES */
+
+
+/* sm */
+@media (min-width: 768px) {
+
+  .headline {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+}
+
+/* md */
+@media (min-width: 992px) {
+
+  .headline {
+    font-size: 80px;
+    line-height: 95px;
+  }
+
+  .text {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .btn-custom {
+    height: 54px;
+    padding: 8px 46px !important;
+  }
+
+  .logo-svg {
+    height: 60px;
+    width: auto;
+  }
+
+  .blue-box {
+    bottom: -200px;
+    right: 0;
+  }
+
+  .parallax {
+    margin-top: -80px;
+    min-height: 200px;
+    padding-top: 200px;
+  }
+
+}
+
+/* lg */
+@media (min-width: 1200px) {
+
+  .mtn-100 {
+    margin-top: -100px;
+  }
+
+  .headline {
+    font-size: 80px;
+    line-height: 95px;
+  }
+
+  .text {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .btn-custom {
+    height: 54px;
+    padding: 8px 46px !important;
+  }
+
+  .logo-svg {
+    height: 60px;
+    width: auto;
+  }
+
+  .parallax{
+    background-position: top 100px left 200px;
+  }
+}
+
+/* xl */
+@media (min-width: 1920px) {
+  .headline-hero {
+    font-size: 130px;
+    line-height: 150px;
+  }
+
+  .btn-custom {
+    height: 54px;
+    padding: 8px 46px !important;
+  }
+
+  .logo-svg {
+    height: 60px;
+    width: auto;
+  }
+
+
+
+
+}
